@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   unpack:
-    if: ${{ hashFiles('portfolio-source.zip.part-*') != '' }}
+    if: github.event.head_commit.message == 'Fix unpack workflow'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
