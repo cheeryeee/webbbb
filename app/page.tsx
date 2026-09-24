@@ -447,7 +447,7 @@ export default function Home() {
                   <circle cx="1100" cy="235" r="13" />
                 </svg>
                 {projects.map((project) => (
-                  "video" in project ? (
+                  project.video !== undefined ? (
                     <VideoMapStop project={project} key={project.number} />
                   ) : (
                   <article className={`map-stop ${project.className}`} key={project.number}>
