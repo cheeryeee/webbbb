@@ -49,7 +49,7 @@ const buildPath = (shape, curviness, ribbonWidth) => {
 export default function TextLoop({
   text = "React ✦ Bits",
   shape = "wave",
-  path,
+  path = "",
   speed = 90,
   direction = "forward",
   separator = "✦",
